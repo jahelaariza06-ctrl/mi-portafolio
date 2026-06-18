@@ -3,9 +3,9 @@ Portafolio personal desplegado con GitHub Pages.
 ## Rol
 [Frontend / Backend / Full Stack / Mobile — el que elegiste]
 ## Tecnologías
-- [Tecnología 1]
-- [Tecnología 2]
-- [Tecnología 3]
+- Tecnología Backend
+- Tecnología MYSQL
+- Tecnología 
 ## Proyecto actual
 [Nombre del proyecto] — [descripción en una línea]
 ## Ver en vivo
