@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAHELA ESPINAL — Desarrolladora Backend</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#0B1F3A;
+    --surface:#143D6B;
+    --border:#2E5EAA;
+    --text:#FFFFFF;
+    --muted:#B8DFFF;
+    --accent:#87CEEB;
+    --accent2:#4DA6FF;
+    --mono:'Space Mono', monospace;
+    --sans:'DM Sans', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    line-height:1.6;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.2rem 2rem;
+    background:rgba(11,31,58,.9);
+    border-bottom:1px solid var(--border);
+}
+
+.nav-logo{
+    text-decoration:none;
+    color:var(--accent);
+    font-family:var(--mono);
+}
+
+.nav-links{
+    display:flex;
+    gap:2rem;
+    list-style:none;
+}
+
+.nav-links a{
+    color:var(--muted);
+    text-decoration:none;
+}
+
+#hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    max-width:900px;
+    margin:auto;
+    padding:6rem 2rem;
+}
+
+.hero-tag{
+    color:var(--accent);
+    font-family:var(--mono);
+    margin-bottom:1rem;
+}
+
+.hero-name{
+    font-size:5rem;
+    margin-bottom:1rem;
+}
+
+.typewriter{
+    color:var(--accent);
+}
+
+.hero-desc{
+    max-width:600px;
+    color:var(--muted);
+    font-size:1.2rem;
+    margin-bottom:2rem;
+}
+
+.btn{
+    padding:12px 20px;
+    border-radius:5px;
+    text-decoration:none;
+    font-family:var(--mono);
+}
+
+.btn-primary{
+    background:var(--accent);
+    color:#000;
+}
+
+.btn-outline{
+    border:1px solid var(--accent2);
+    color:var(--text);
+}
+
+section{
+    max-width:900px;
+    margin:auto;
+    padding:5rem 2rem;
+    border-top:1px solid var(--border);
+}
+
+.section-title{
+    margin-bottom:2rem;
+    font-size:2rem;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:3rem;
+}
+
+.skills-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill-badge{
+    border:1px solid var(--border);
+    background:var(--surface);
+    padding:8px 15px;
+    border-radius:5px;
+}
+
+.project-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    padding:2rem;
+    border-radius:10px;
+}
+
+.project-name{
+    margin-bottom:1rem;
+}
+
+.project-tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:1rem;
+}
+
+.tech-tag{
+    background:rgba(135,206,235,.1);
+    color:var(--accent);
+    border:1px solid var(--accent);
+    padding:7px 12px;
+    border-radius:5px;
+}
+
+.team-members{
+    display:flex;
+    gap:10px;
+    margin-top:1rem;
+}
+
+.team-member{
+    border:1px solid var(--border);
+    padding:8px 15px;
+    border-radius:5px;
+}
+
+footer{
+    text-align:center;
+    padding:2rem;
+    border-top:1px solid var(--border);
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="#" class="nav-logo">// JAHELAESPINAL</a>
+
+    <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyecto">Proyecto</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<div id="hero">
+    <div class="hero-content">
+
+        <p class="hero-tag">
+            // SENA · ADSO · 2026
+        </p>
+
+        <h1 class="hero-name">
+            Hola, soy<br>
+            <span class="typewriter">JAHELA ESPINAL</span>
+        </h1>
+
+        <p class="hero-desc">
+            Estudiante de Análisis y Desarrollo de Software.
+            Me apasiona el desarrollo Backend y la creación de aplicaciones
+            eficientes que ayuden a resolver problemas reales mediante la tecnología.
+        </p>
+
+        <a href="#" class="btn btn-primary">
+            Ver GitHub
+        </a>
+
+    </div>
+</div>
+
+<section id="sobre-mi">
+
+<h2 class="section-title">
+Sobre mí
+</h2>
+
+<div class="about-grid">
+
+<div>
+
+<p>
+Soy estudiante de Análisis y Desarrollo de Software del SENA.
+Me apasiona el desarrollo Backend y el aprendizaje constante de nuevas tecnologías.
+</p>
+
+<br>
+
+<p>
+Actualmente estoy fortaleciendo mis habilidades en Backend Development,
+bases de datos y desarrollo de aplicaciones.
+</p>
+
+<br>
+
+<p>
+Creo que el mejor software es aquel que resuelve problemas reales de manera eficiente y segura.
+</p>
+
+</div>
+
+<div>
+
+<h3>Tecnologías que estoy aprendiendo</h3>
+
+<br>
+
+<div class="skills-grid">
+
+<span class="skill-badge">Git</span>
+
+<span class="skill-badge">GitHub</span>
+
+<span class="skill-badge">JavaScript</span>
+
+<span class="skill-badge">HTML</span>
+
+<span class="skill-badge">CSS</span>
+
+<span class="skill-badge">MySQL</span>
+
+<span class="skill-badge">PHP</span>
+
+<span class="skill-badge">Laravel</span>
+
+<span class="skill-badge">VS Code</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="proyecto">
+
+<h2 class="section-title">
+Mi proyecto
+</h2>
+
+<div class="project-card">
+
+<h3 class="project-name">
+EPS PetFeliz
+</h3>
+
+<p>
+EPS PetFeliz es una plataforma orientada al cuidado de mascotas,
+que permite a los usuarios consultar planes de salud veterinarios
+y acceder a diferentes servicios de manera rápida y sencilla.
+</p>
+
+<div class="project-tech">
+
+<span class="tech-tag">HTML</span>
+
+<span class="tech-tag">CSS</span>
+
+<span class="tech-tag">JavaScript</span>
+
+<span class="tech-tag">PHP</span>
+
+<span class="tech-tag">Laravel</span>
+
+<span class="tech-tag">MySQL</span>
+
+</div>
+
+<h3 style="margin-top:30px;">
+Equipo
+</h3>
+
+<div class="team-members">
+
+<span class="team-member">
+JAHELA ESPINAL
+</span>
+
+<span class="team-member">
+Eliannis Hernández
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<h2 class="section-title">
+Contacto
+</h2>
+
+<p>
+GitHub: Tu usuario de GitHub
+</p>
+
+<br>
+
+<p>
+Correo: Tu correo electrónico
+</p>
+
+<br>
+
+<p>
+LinkedIn: Tu perfil de LinkedIn
+</p>
+
+</section>
+
+<footer>
+
+Construido con HTML, CSS y JavaScript · 2026
+
+</footer>
+
+</body>
+</html>
